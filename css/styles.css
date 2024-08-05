@@ -17,5 +17,115 @@
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* FLEX */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.jcc {
+  justify-content: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.jcfs {
+  justify-content: flex-start;
+}
+.jcfe {
+  justify-content: flex-end;
+}
+.aic {
+  align-items: center;
+}
+.aifs {
+  align-items: flex-start;
+}
+.aife {
+  align-items: flex-end;
+}
+
+/* HEADER */
+.header .container {
+  width: 1100px;
+  height: 130px;
+}
+
+.header .logo {
+  width: 80px;
+  margin-left: 10px;
+}
+.header .logo img {
+  width: 100%;
+}
+
+header .search-bar {
+  width: 300px;
+  min-width: 200px;
+  border: 1px solid var(--color-main);
+  border-radius: 15px;
+  position: relative;
+  margin-right: 30px;
+}
+
+header .search-bar input {
+  width: 90%;
+  height: 40px;
+  border-radius: 15px;
+  padding: 0 0 0 15px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+header .search-bar input::placeholder {
+  color: var(--color-main-medium);
+}
+
+header .search-bar button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+header .search-bar button img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: block;
+}
+
+header .shopping-cart img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 40px;
+}
+
+header .icons {
+  margin-right: 10px;
 }
